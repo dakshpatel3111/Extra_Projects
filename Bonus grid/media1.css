@@ -1,0 +1,121 @@
+/*Daksh Patel and Student ID:991547214*/
+body{
+	background-image: url('images/bricks.jpg');	
+	font-family: Comic Sans MS;
+	line-height: 1.5;
+	text-align: left;
+	grid-template-columns: 40px 50px auto 50px 40px;
+	grid-template-rows: 25% 100px auto;
+	
+}
+.nav{
+	margin: 0 auto;
+	width: 60%;
+	clear:both;
+
+	
+}
+a{
+	text-decoration: none;
+}
+a:link, a:visited{
+	color: black;
+	font-size: 25px;
+}
+a:hover, a:active{
+	background-color: #629174;
+	color:white;
+   
+}
+.mainheader img{
+	width: 20%;
+	height: auto;
+	margin:2% 0;
+	
+}
+.mainheader nav{
+	background-color: white;
+	height:60px;
+	border: solid;
+	border-color: #1a75ff;
+	border-radius: 5px;
+
+}
+
+.mainheader nav ul{
+	
+	list-style: none;
+	margin: 0 auto;
+
+}
+.mainheader nav ul li{
+	
+	display: inline;
+	float: left;
+	
+}
+
+.mainheader nav a:link, .mainheader nav a:visited{
+	color: grey;
+	display: inline-block;
+	padding: 10px 35px;
+	height: 40px;
+}
+
+.mainheader nav a:hover, 
+.mainheader nav a:active,
+.mainheader nav .active a:link,
+.mainheader nav .active a:visited{
+	background-color:#1a75ff;
+	color:white;
+	text-shadow: none;
+} 
+
+.mainheader nav ul li a{
+	border-radius: 5px;
+
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid ;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+@media only screen and (min-width: 150px) and (max-width: 640px){
+	body{
+		background-image: url("images/paste.jpg");
+	}
+	nav{
+		width: 90%;
+		font-size: 95%;
+	}
+	.mainheader ul li{
+		width: 100%;
+		text-align: center;
+
+	}
+	.mainheader nav{
+	background-color: white;
+	height:240px;
+	border: solid;
+	border-color: #1a75ff;
+	border-radius: 5px;
+
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #5881F6 ;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+}

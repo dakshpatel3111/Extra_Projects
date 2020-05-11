@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Assignment 4</title>
+       <style>
+           body{
+               font-family: Verdana;
+               
+           }
+           
+           h1{
+            background-color: darkorange;
+               color: grey;
+               text-align: center;
+               text-shadow: 3px 2px white;
+               border-radius: 10px 8px ;
+            
+           }
+           legend{
+               color: darkorange;
+               font-size: 40px;
+               text-shadow: 3px 2px black;
+           }
+            input[type=text], input[type=password]
+ {
+                background-color: cornsilk;
+                width: 25%;
+                margin: 5px 0 20px 0;
+                padding: 10px;
+                display: inline-block;
+                border: none;
+             
+
+                      }
+
+ 
+        
+        </style>
+    </head>
+<body>
+ <h1>Assignment 4 <br> Daksh Patel <br> Student Id: 991547214 <br> Instructor: Sukhbir Tatla<br></h1>   
+ <form id="myform" method="" action="thankyou.html" onsubmit="return check()" >
+     
+ <fieldset>    
+     <legend>Your Information</legend>
+<label>Username:</label>
+<input type="text"  id="uname" placeholder="Username" oninput="return checkusername()">
+<span id="user" ></span>
+     
+<br>
+     
+<label>Password:</label>
+     <p style="font-size: 10px;">Password Should Fullfill The Strength bar (Hint:use @,#,$ special characters)</p>
+<input type="password" id="pswd" placeholder="Password" oninput="return checkScript()">
+<progress max="5" id="strength" value=""></progress>  
+     
+     <br>
+<label >Confirm Password:</label>
+     <p style="font-size: 10px;">PassWord Should match with the above</p>
+<input type="password" id="pswdr" placeholder="Re-Enter Password" oninput="return checkPassword()">
+<span id="repass"></span>
+<br>
+
+Male<input type="radio" name="gender" value="male" id="male" onsubmit="return gendercheck()">
+Female<input type="radio" name="gender" value="female" id="female" onsubmit="return gendercheck()">
+<span id="gender1"></span>
+<br>
+     
+<label >Email Id</label>
+<input type="text" id="email" placeholder="email" oninput="return checkemail()" >
+<span id="mail"></span>
+<br>
+     
+<label for="number">Number</label>
+<input type="text" id="number" placeholder="number" oninput="return Number()" >
+<span id="num"></span>
+     </fieldset>
+<br>
+     
+<input type="reset" value="Reset">
+<input type="submit" value="Submit" >
+     
+</form>        
+<script type="text/javascript" src="Scripts/script.js"></script>
+</body>    
+</html>
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 3</title>
+	<script src="scripts/script.js"></script>
+</head>
+<body>
+	<style type="text/css">
+		body{
+			background-image: url("Images/bricks.jpg");
+		}
+		#number{
+		   height: 40px;
+		   text-align: center;
+
+		}
+	</style>
+<!--Name : Daksh Patel Date:5/6/2019 -->
+    <h1 align="center" style="font-family: verdana;size: 30px;background-color: grey;color: white;">Assignment 3</h1>
+	<h1 align="center" style="font-family: verdana;size: 30px;">Daksh Patel</h1>
+	<h1 align="center" style="font-family: verdana;size: 30px;">Student Id:991547214</h1>
+	<h1 align="center" style="font-family: verdana;size: 30px;
+	background-color: grey;color: white;">Instructor : Sukhbhir Singh Tatla</h1>
+	
+
+<input type="text" id="number" placeholder="Your Value Here" >
+<!--button1-->
+
+<button id="button1" value="ctf" onclick="ctf(getElementById('number').value)"> Celsius to Fahrenheit</button>
+
+<button id="button1" value="ctf" onclick="ctf2(getElementById('number').value)"> Fahrenhiet to Celcius</button>
+<!--button2-->
+
+
+<button id="button2" value="ftm" onclick="feet(getElementById('number').value)"> Feet to Meters</button>
+<button id="button2" value="ftm" onclick="feet2(getElementById('number').value)">Meters to feet</button>
+
+<!--button3-->
+
+
+<button id="button3" value="itc" onclick="itc(getElementById('number').value)" >Inches to Centimeter</button>
+<button id="button3" value="itc" onclick="itc2(getElementById('number').value)">Centimeters to Inches</button>
+
+<!--button4-->
+<button id="button4" value="ptk" onclick="pound(getElementById('number').value)">Pounds to Kilograms</button>
+<button id="button4" value="ptk" onclick="pound2(getElementById('number').value)">Kilograms to Pounds</button>
+
+
+
+<h2 style="font-family: verdana;size: 30px;
+	background-color: grey;color: white;   height: 40px; text-align: center;">Answer : <span id="output"></span></h2>
+<button id="reset" value="Reset" onclick="document.getElementById('number').value = ''">Reset</button>
+</body>
+</html>
